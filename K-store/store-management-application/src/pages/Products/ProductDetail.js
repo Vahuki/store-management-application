@@ -42,7 +42,7 @@ const ProductDetail = () => {
 
   return (
     <div style={styles.container}>
-      <img src={`/${product.img}`} alt={product.name} style={styles.image} />
+      <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} style={styles.image} />
       <div style={styles.info}>
         <h2>{product.name}</h2>
         <p><strong>Nhóm:</strong> {product.group}</p>

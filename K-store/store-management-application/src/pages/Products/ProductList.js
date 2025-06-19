@@ -41,7 +41,7 @@ const ProductList = () => {
             {products.map((product) => (
                 <Link to={`/products/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div key={product.id} style={styles.card}>
-                        <img src={product.img} alt={product.name} style={styles.image} />
+                        <img src={`${process.env.PUBLIC_URL}/${product.img}`} alt={product.name} style={styles.image} />
                         <h3>{product.name}</h3>
                         <p>Nhóm: {product.group}</p>
                         <p>Giá: {product.price.toLocaleString()} VND</p>
