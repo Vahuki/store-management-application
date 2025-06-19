@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/products';
+const API_URL = 'https://6854306a5470323abe950c57.mockapi.io/products';
 
 // Lấy danh sách sản phẩm
 export const getProducts = async () => {
